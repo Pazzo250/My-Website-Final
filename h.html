@@ -1,0 +1,224 @@
+<div class="form-contianer" style="height: 100vh;">                    
+    <form id="signup-Form">
+        <h2>SignUp</h2>
+    </br>
+        <input type="text" id="signupFirst-Name" placeholder="First Name" required>
+        </br>                                    
+        
+        <input type="text" id="signupLast-Name" placeholder="Last Name" required>
+    
+        </br>
+        <input type="text" id="signupaddress" placeholder="Address">
+    
+        </br>
+        <input type="tel" id="signupContact" placeholder="Contact">
+    
+        </br>
+        <input type="email" id="signupemail" placeholder="Email" required>
+    
+        </br>
+        <input type="password" id="signupcreate-password" placeholder="Create Password" required>
+    
+        </br>
+        <div class="bt" >
+          <button type="submit">Sign Up</button>                                             
+        </div>
+          <p>Do you need to go back? <a href="login.html">Go Back</a> </p>                       
+    </form>
+        <script type="module" src="js/auth.js"></script>
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="form-container">
+    <h1>LogIn</h1>
+    <form id="login-form" >
+        <input type="email" id="signupemail" placeholder="email" required>
+        </br>
+        <input type="password" id="signuppassword" placeholder="password">
+        </br>
+        <div class="bt" >
+            <button type="submit" class="h">LogIn</button>
+            <button href="HOME.html" class="j">Back</button>
+        </div>
+    </form>
+
+    <p>Don't have an Account? <a href="signup.html">Sign up here</a> </p>
+
+</div>
+<script>
+    document.getElementById("login-form").addEventListener("submit", function(event){
+        event.preventDefault();
+        window.location.href ="login.html";
+    });
+</script>
+</div>
+
+
+
+
+
+
+
+
+
+/* back to top*
+
+window.onscroll = function () {
+    document.getElementById("backToTop").
+    style.display = window.scrollY >
+    300 ? "block" : "none";
+};
+function scrollToTop() {
+    window.scrollToTop({
+        top: 0,
+        behavior: "smooth"});        
+}
+
+
+
+<div id="map">
+    <h1>MAP</h1>
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+    async defer></script>
+    <script>
+        function initMap() {
+            const location = { lat: -1.9579, lng: 30.1127 };
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 15,
+                center: location,
+            });
+            new
+           google.maps.Market({ position:
+           location, map: map});    
+        }
+    </script>
+</div>
+                
+ 
+
+
+
+
+
+
+
+
+.T {
+    padding-left: 300px; 
+    padding-top: 5px;
+    height: 50px;
+ }  
+ .logo {
+     display: flex; 
+     align-items: center;
+         
+     
+ } 
+ .image {
+     width: 100px;
+     border-radius: 90px;
+     box-shadow: 4px -4px 40px rgb(13, 209, 13);
+ }
+ .search-bar {
+     height: 40px;
+     width: 200px;
+ }     
+
+ 
+
+
+
+
+
+
+ <div class="logo">
+    <div>
+        <img class="image" src="skates LOGO.jpg">
+    </div>    
+    <div class="T">
+        <input class="search-bar" type="text" placeholder="Search">
+    </div>
+</div>
+
+
+
+
+<div class="front">
+    <img class="front-screen" src="photo3.jpg">
+    <p>the best school in Rwanda</p>
+    <p>come and learn with</p>
+</div>
+
+<div class="front">
+    <img class="front-screen" src="photo2.jpg">
+    <p>the best school in Rwanda</p>
+    <p>come and learn with</p>
+</div>
+
+
+
+
+<div class="containe">
+    <div class="slide">
+        <div class="itemm" style="background-image: url(photo1.jpg);">
+            <div class="conten">
+                <div class="name">rwanda</div>
+                <div class="des"></div>
+                
+            </div>
+        </div>
+        <div class="itemm" style="background-image: url(photo2.jpg);">
+            <div class="conten">
+                <div class="name">sudan</div>
+                <div class="des"></div>
+                
+            </div>
+        </div>
+        <div class="itemm" style="background-image: url(photo3.jpg);">
+            <div class="conten">
+                <div class="name">uganda</div>
+                <div class="des"></div>
+                
+            </div>
+        </div>
+        <div class="itemm" style="background-image: url(photo2.jpg);">
+            <div class="conten">
+                <div class="name">tanzania</div>
+                <div class="des"></div>
+                
+            </div>
+        </div>
+        <div class="itemm" style="background-image: url(photo3.jpg);">
+            <div class="conten">
+                <div class="name">congo</div>
+                <div class="des"></div>
+                
+            </div>
+        </div>
+        <div class="itemm" style="background-image: url(photo1.jpg);">
+            <div class="conten">
+                <div class="name">burundi</div>
+                <div class="des"></div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="button1">
+        <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+        <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+</div>

@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Website</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootsrap@5.3.0/dist/css/bootsrap.min.css">
+        <link rel="stylesheet" href="css/HOME.css"> 
+        <link rel="stylesheet" href="fontawesome-free-6.7.2-web/css/all.min.css">              
+        <!-- Basic SEO -->
+        <title>My Website - Best Skating Academy in Kigali</title>
+        <meta name="description" content="Learn how to skate with professional trainers in Kigali. Join our skating academy today!">
+        <meta name="keywords" content="skating, rollerblading, sports academy, Kigali">
+        <meta name="author" content="My Website Name">
+        <meta name="robots" content="index, follow">        
+        <!-- Mobile Responsive -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Open Graph (For Social Media Sharing) -->
+        <meta property="og:title" content="My Website - Best Skating Academy in Kigali">
+        <meta property="og:description" content="Join our top-rated skating academy and learn from professionals.">
+        <meta property="og:image" content="https://mywebsite.com/thumbnail.jpg">
+        <meta property="og:url" content="https://mywebsite.com">
+        <meta name="twiter:card" content="summary_large_image">
+    </head>
+    <body>     
+        <div class="wrapper-main">
+            <div class="top">
+                <div class="T">
+                    <log>
+                        <img src="">
+                    </log>
+                </div>
+                <div class="T">
+                    <i class="fa-solid fa-bars menu-icon" onclick="openMenu()"></i>
+                    <div id="sideMenu" class="side-menu">
+                        <a href="javascript:void(0)" class="close-btn"
+                        onclick="closeMenu()">&times;</a>
+                        </br>
+                        <h2 style="color:rgb(61, 38, 114);">Menu</h2>
+                        </br>
+                        </br>
+                        <a href="HOME.html">HOME</a>
+                        <a href="login.html">Join Now</a>
+                        <a href="signup.html">SignUp</a>
+                        <a href="location.html">location</a>
+                        <a href="blog.html">blog</a>
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact-us</a>
+                    </div>
+                </div>
+            </div>                      
+                 
+                <div class="hero">
+                    <a href="HOME.html" id="loc" class="btn">HOME</a>
+                    <a href="login.html" id="loc" class="btn">Join Now</a>
+                    <a href="blog.html" id="loc" class="btn">Read Our Blog</a>
+                    <a href="location.html" id="loc" class="btn">Location</a>
+                    <a href="Tel: +250785567778" id="callButton">
+                    <i class="fa-solid fa-phone"></i> Call Us
+                    </a>
+                    <a id="themeToggle">
+                    <i class="fa-duotone fa-solid fa-moon fa-lg"></i> Dark Mode
+                    </a>
+                                      
+                    <div style="padding-top: 30px;">
+                        <h1>Welcome to Rwanda Prayer Skates</h1>
+                        <p>Learn & Master Skating With Us</p>
+                    </div>                  
+                </div>
+                <div class="form-contianer">
+                    <h2>SignUp</h2>
+                    <form id="sigmupForm">
+                        <input type="First-Name" id="signupFirst-Name" placeholder="First-Name" >
+                        </br>                                    
+                        
+                        <input type="Last-Name" id="signupLast-Name" placeholder="Last-Name" >
+                    
+                        </br>
+                        <input type="address" id="signupaddress" placeholder="address">
+                    
+                        </br>
+                        <input type="Contact" id="signupContact" placeholder="Contact">
+                    
+                        </br>
+                        <input type="email" id="signupemail" placeholder="email" >
+                    
+                        </br>
+                        <input type="create-password" id="signupcreate-password" placeholder="create-password" >
+                    
+                        </br>
+                        <div class="bt" >
+                          <button type="submit">Sign Up</button>                                             
+                        </div>
+                          <p>Do you need to go back? <a href="login.html">Go Back</a> </p>
+                       
+                    </form>
+                        <script type="module" src="js/auth.js"></script>
+                    
+                </div>        
+                <div class="down">
+                    <div>
+                        <a>
+                           <p id="backToTop" onclick="scrollToTop()">⬆ Back To Top</p>
+                        </a>
+                    </div>
+                    <div class="icons">
+                        <h3 class="d">Our Social Media</h3>
+                        <ul class="madia">                                                  
+                            <a href="https://instagram.com" target="_blank" class="instagram">
+                                <li class="icon instagram">
+                                    <span class="name">instagram</span>
+                                    <span><i class="fab fa-instagram icon"></i></span>
+                                </li>
+                            </a>                                                
+                            <a href="https://twitter.com" target="_blank" class="twitter">
+                                <li class="icon twitter">
+                                    <span class="name">Twitter</span>
+                                    <span><i class="fab fa-twitter icon"></i></span>
+                                </li>
+                            </a>                              
+                            <a href="https://tiktok.com" target="_blank" class="tiktok">
+                                <li class="icon tiktok">
+                                    <span class="name">Tiktok</span>
+                                    <span><i class="fab fa-tiktok icon"></i></span>
+                                </li>
+                            </a>        
+                            <a href="https://facebook.com" target="_blank" class="facebook">
+                                <li class="icon facebook">
+                                    <span class="name">Facebook</span>
+                                    <span><i class="fab fa-facebook icon"></i></span>
+                                </li>
+                            </a>   
+                            <a href="https://youtube.com" target="_blank" class="youtube">
+                                <li class="icon youtube">
+                                    <span class="name">Youtube</span>
+                                    <span><i class="fab fa-youtube icon"></i></span>
+                                </li>
+                            </a>   
+                        </ul>                     
+                        </div>
+                        <div class="end">                    
+                            <div class="i">
+                                <div class="y">
+                                    <a href="HOME.html">home</a>
+                                </div>
+                                <div class="y">
+                                    <a>Contact-us</a>
+                                </div>
+                                <div class="y">
+                                    <a>Help</a>
+                                </div>
+                                <div class="y">
+                                    <a>about</a>
+                                </div>
+                            </div>
+                        
+                    </div>
+                    
+                </div>         
+                
+                <script src="HOME.js" defer></script>
+        </div>             
+    </body>
+    
+</html>
+
+
+/* <body></body>
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Website</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootsrap@5.3.0/dist/css/bootsrap.min.css">
+        <link rel="stylesheet" href="css/HOME.css"> 
+        <link rel="stylesheet" href="fontawesome-free-6.7.2-web/css/all.min.css">              
+        <!-- Basic SEO -->
+        <title>My Website - Best Skating Academy in Kigali</title>
+        <meta name="description" content="Learn how to skate with professional trainers in Kigali. Join our skating academy today!">
+        <meta name="keywords" content="skating, rollerblading, sports academy, Kigali">
+        <meta name="author" content="My Website Name">
+        <meta name="robots" content="index, follow">        
+        <!-- Mobile Responsive -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Open Graph (For Social Media Sharing) -->
+        <meta property="og:title" content="My Website - Best Skating Academy in Kigali">
+        <meta property="og:description" content="Join our top-rated skating academy and learn from professionals.">
+        <meta property="og:image" content="https://mywebsite.com/thumbnail.jpg">
+        <meta property="og:url" content="https://mywebsite.com">
+        <meta name="twiter:card" content="summary_large_image">
+    </head>
+    <body>     
+        <div class="wrapper-main">
+            <div class="Top">
+                
+                <div>
+                    
+                </div>    
+                <div class="T">
+                    <input class="search-bar" type="text" placeholder="Search">
+                </div>  
+                                   
+                <div>                    
+                    <i class="fa-solid fa-bars menu-icon" onclick="openMenu()"></i>
+                    <div id="sideMenu" class="side-menu">                        
+                        <a href="javascript:void(0)" class="close-btn"
+                        onclick="closeMenu()">&times;</a>
+                        </br>
+                        <h2 style="color:rgb(61, 38, 114);">Menu</h2>
+                        </br>
+                        </br>
+                        <a href="HOME.html">HOME</a>
+                        <a href="login.html">Join Now</a>
+                        <a href="signup.html">SignUp</a>
+                        <a href="location.html">location</a>
+                        <a href="blog.html">blog</a>
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact-us</a>
+                    </div>
+                </div>
+            </div>                      
+                 
+                <div class="hero">
+                    <a href="HOME.html" id="loc" class="btn">HOME</a>
+                    <a href="login.html" id="loc" class="btn">Join Now</a>
+                    <a href="blog.html" id="loc" class="btn">Read Our Blog</a>
+                    <a href="location.html" id="loc" class="btn">Location</a>
+                    <a href="Tel: +250785567778" id="callButton">
+                    <i class="fa-solid fa-phone"></i> Call Us
+                    </a>
+                    <a id="themeToggle">
+                    <i class="fa-duotone fa-solid fa-moon fa-lg"></i> Dark Mode
+                    </a>
+                                      
+                    <div style="padding-top: 30px;">
+                        <h1>Welcome to Rwanda Prayer Skates</h1>
+                        <p>Learn & Master Skating With Us</p>
+                    </div>                  
+                </div>
+                <div class="front">
+                   <img class="front-screen" src="photo3.jpg">
+                   <p>the best school in Rwanda</p>
+                   <p>come and learn with</p>
+                </div>
+                <div class="front">
+                    <img class="front-screen" src="photo2.jpg">
+                    <p>the best school in Rwanda</p>
+                    <p>come and learn with</p>
+                 </div>        
+                <div class="down">
+                    <div>
+                        <a>
+                           <p id="backToTop" onclick="scrollToTop()">⬆ Back To Top</p>
+                        </a>
+                    </div>
+                    <div class="icons">
+                        <h3 class="d">Our Social Media</h3>
+                        <ul class="madia">                                                  
+                            <a href="https://instagram.com" target="_blank" class="instagram">
+                                <li class="icon instagram">
+                                    <span class="name">instagram</span>
+                                    <span><i class="fab fa-instagram icon"></i></span>
+                                </li>
+                            </a>                                                
+                            <a href="https://twitter.com" target="_blank" class="twitter">
+                                <li class="icon twitter">
+                                    <span class="name">Twitter</span>
+                                    <span><i class="fab fa-twitter icon"></i></span>
+                                </li>
+                            </a>                              
+                            <a href="https://tiktok.com" target="_blank" class="tiktok">
+                                <li class="icon tiktok">
+                                    <span class="name">Tiktok</span>
+                                    <span><i class="fab fa-tiktok icon"></i></span>
+                                </li>
+                            </a>        
+                            <a href="https://facebook.com" target="_blank" class="facebook">
+                                <li class="icon facebook">
+                                    <span class="name">Facebook</span>
+                                    <span><i class="fab fa-facebook icon"></i></span>
+                                </li>
+                            </a>   
+                            <a href="https://youtube.com" target="_blank" class="youtube">
+                                <li class="icon youtube">
+                                    <span class="name">Youtube</span>
+                                    <span><i class="fab fa-youtube icon"></i></span>
+                                </li>
+                            </a>   
+                        </ul>                     
+                        </div>
+                        <div class="end">                    
+                            <div class="i">
+                                <div class="y">
+                                    <a href="HOME.html">home</a>
+                                </div>
+                                <div class="y">
+                                    <a>Contact-us</a>
+                                </div>
+                                <div class="y">
+                                    <a>Help</a>
+                                </div>
+                                <div class="y">
+                                    <a>about</a>
+                                </div>
+                                <div class="y">
+                                    <a>look</a>
+                                </div>
+                            </div>
+                        
+                    </div>
+                    
+                </div>         
+                
+                <script src="HOME.js" defer></script>
+        </div>             
+    </body>
+    
+</html>
+
+
+/*
+.containe { 
+    position: absolute;
+    top: 89%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+    color: black;
+    height: 400px;
+    background: #dd0a0a;
+    box-shadow: 0 30px 50px #dbdbdb;
+    border-radius: 50px;
+    flex-wrap: wrap;    
+}
+.containe .slide .itemm {
+    width: 160px;
+    height: 250px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    border-radius: 20px;
+    box-shadow: 0 30px 50px #505050;
+    background-position: 50% 50%;
+    background-size: cover;
+    display: inline-block;
+    transition: 0.5s;
+    border: 20px solid white;
+        
+}
+.slide .itemm:nth-child(1),
+.slide .itemm:nth-child(2) {
+     top:0;
+     left: 0;
+     transform: translate(0,0);
+     border-radius: 0;
+     width: 100%;
+     height: 100%;
+}
+.slide .itemm:nth-child(3){
+    left: 50%;    
+    overflow: hidden;
+        
+
+}
+.slide .itemm:nth-child(4){
+    left: calc(50% + 220px);
+    
+    
+}
+.slide .itemm:nth-child(5){
+    left: calc(50% + 440px);
+    
+    
+}
+.slide .itemm:nth-child(n + 6){
+    left: calc(50% + 660px);
+    display: none;
+    
+}
+.itemm .conten {
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    width: 300px;
+    text-align: left;
+    color: #eee;
+    transform: translate(0, -50%);
+    font-family: system-ui;
+    display: none;
+}
+.slide .itemm:nth-child(2) .conten{
+    display: block;
+}
+.conten {    
+    display: flex;
+    width: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.conten .name {
+    color: white;
+    display: inline;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 0;
+    animation: animate 1s ease-in-out 1 forwards;
+}
+.conten .des {
+    display: inline;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.3s 1 forwards;
+}
+.conten button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.6s 1 forwards;
+}
+@keyframes animate {
+    from {
+        opacity: 0;
+        transform: translate(0, 100px);
+        filter: blur(33px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0);
+        filter: blur(0);
+    }
+}
+.button1 {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+}
+.button1 button {
+    width: 40px;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+    border: 1px solid #000;
+    transition: 0.3s;
+}
+.button1 button:hover {
+    background: #ababab;
+    color: #fff;
+}*/
+
+
+
+
+/*
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.gap {
+    height: 430px;
+}*/
+
+
+
+/*
+.icons {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    place-items: center;
+    background: linear-gradient(315deg, #ffffff, #d7e1ec);    
+}
+.icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 5px;
+    transition: 0.3s;
+    color: white;
+    
+}
+.icons a:hover {
+    transform: scale(0.8);
+    opacity: 0.8;
+}
+/* Instagram Icon * 
+.instagram {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    border: 2px solid rgb(61, 38, 114);
+    border-radius: 100%;    
+}
+
+/* Twitter Icon * 
+.twitter {
+    background: #1DA1F2;
+    border: 2px solid rgb(61, 38, 114);
+    border-radius: 500%;
+}
+
+/* TikTok Icon* 
+.tiktok {
+    background: #000;
+    border: 2px solid rgb(61, 38, 114);
+    border-radius: 500%;
+}
+.facebook {
+    background: rgb(76, 158, 235);
+    border: 2px solid rgb(61, 38, 114);
+    border-radius: 500%;
+}
+.youtube {
+    background: rgb(250, 9, 9);
+    border: 2px solid rgb(61, 38, 114);
+    border-radius: 500%;       
+}/*
+.madia {
+    display: inline-flex;
+    list-style: none;   
+    
+}
+.madia .icon {
+    position: relative;    
+    border-radius: 500%;
+    border: none;    
+    padding: 15px;
+    margin: 10px;
+    width: 5px;
+    height: 5px;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.madia .name {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.madia .name::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background:#ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    
+}
+.madia .icon:hover .name {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+.madia .icon:hover span,
+.madia .icon:hover .name {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+.madia .instagram:hover,
+.madia .instagram:hover .name,
+.madia .instagram:hover .name::before {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    color:#ffffff;
+    
+}
+.madia .twitter:hover,
+.madia .twitter:hover .name,
+.madia .twitter:hover .name::before {
+    background: #1DA1F2;
+    color: #ffffff;
+}
+
+.madia .facebook:hover,
+.madia .facebook:hover .name,
+.madia .facebook:hover .name::before {
+    background: rgb(76, 158, 235);
+    color: #ffffff;
+}
+.madia .youtube:hover,
+.madia .youtube:hover .name,
+.madia .youtube:hover .name::before {
+    background: rgb(250, 9, 9);
+    color: #ffffff;
+}
+.madia .tiktok:hover,
+.madia .tiktok:hover .name,
+.madia .tiktok:hover .name::before {
+    background: #000;
+    color: #ffffff;
+}
+
+
+
+
+
+<div class="container about-container">
+    <section class="our-story">
+        <h2>Our Story</h2>
+        <div class="story-content">
+            <div class="story-image">
+                <img src="pics/skate_kids.jpg" alt="Kids Skating"> </div>
+            <div class="story-text">
+                <p>Rwanda Prayer Skates was born from a simple yet powerful vision: to provide children in Kigali with opportunities for physical activity, skill development, and personal growth through skating and biking. Founded in [Year of Founding] by individuals passionate about both sports and community development, we recognized the transformative power these activities can have on young lives.</p>
+                <p>Initially starting with a small group of enthusiastic children, our academy has grown into a vibrant community where kids learn not just the techniques of skating and biking, but also essential life skills such as discipline, confidence, teamwork, and perseverance. We believe that by fostering a supportive and encouraging environment, we can help children unlock their full potential, both on and off the wheels.</p>
+                <p>Our name, "Rwanda Prayer Skates," reflects our deep-rooted values of community support and positive impact. We strive to be more than just a sports academy; we aim to be a place where children feel safe, inspired, and empowered to become the best versions of themselves.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="our-mission-vision">
+        <h2>Our Mission & Vision</h2>
+        <div class="mission-vision-content">
+            <div class="mission">
+                <h3>Our Mission</h3>
+                <p>To empower children in Kigali by providing high-quality skating and biking programs that build confidence, develop essential skills, promote physical well-being, and foster a strong sense of community.</p>
+            </div>
+            <div class="vision">
+                <h3>Our Vision</h3>
+                <p>To be the leading sports academy in Kigali, recognized for its positive impact on the lives of children, shaping future leaders and fostering a culture of healthy living and active engagement through skating and biking.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="meet-the-team">
+        <h2>Meet Our Dedicated Team</h2>
+        <p class="team-intro">Our passionate and experienced team of instructors and mentors are dedicated to providing a supportive and enriching learning environment for every child.</p>
+        <div class="team-members">
+            <div class="team-member">
+                <img src="pics/team_member1.jpg" alt="Team Member 1"> <h3>[Team Member 1 Name]</h3>
+                <p class="role">Head Coach & Founder</p>
+                <p class="bio">Brief bio about this team member and their experience.</p>
+            </div>
+            <div class="team-member">
+                <img src="pics/team_member2.jpg" alt="Team Member 2"> <h3>[Team Member 2 Name]</h3>
+                <p class="role">Skating Instructor</p>
+                <p class="bio">Brief bio about this team member and their experience.</p>
+            </div>
+            <div class="team-member">
+                <img src="pics/team_member3.jpg" alt="Team Member 3"> <h3>[Team Member 3 Name]</h3>
+                <p class="role">Biking Instructor & Mentor</p>
+                <p class="bio">Brief bio about this team member and their experience.</p>
+            </div>
+            </div>
+    </section>
+
+    <section class="our-values">
+        <h2>Our Core Values</h2>
+        <ul class="values-list">
+            <li><strong>Empowerment:</strong> We strive to empower children with skills and confidence.</li>
+            <li><strong>Community:</strong> We foster a strong sense of belonging and support.</li>
+            <li><strong>Discipline:</strong> We instill the importance of focus and dedication.</li>
+            <li><strong>Safety:</strong> We prioritize the well-being of all our participants.</li>
+            <li><strong>Fun & Engagement:</strong> We believe learning should be an enjoyable experience.</li>
+            <li><strong>Skill Development:</strong> We are committed to nurturing talent and growth.</li>
+        </ul>
+    </section>
+
+    <section class="why-join-us">
+        <h2>Why Choose Rwanda Prayer Skates?</h2>
+        <p>Join our growing family and discover the many benefits of being a part of Rwanda Prayer Skates.</p>
+        <ul class="join-benefits">
+            <li>Experienced and passionate instructors.</li>
+            <li>Safe and supportive learning environment.</li>
+            <li>Focus on both skill development and personal growth.</li>
+            <li>Opportunities for social interaction and teamwork.</li>
+            <li>A fun and engaging way for kids to stay active.</li>
+            <li>A commitment to making a positive impact in the community.</li>
+        </ul>
+    </section>
+</div>

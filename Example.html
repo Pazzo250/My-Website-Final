@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learners Stories</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom right, #e0f7fa, #ffffff);
+      color: #333;
+    }
+    .container {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .title {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .title h2 {
+      color: #1e88e5;
+      font-size: 2rem;
+    }
+    .subtitle {
+      text-align: center;
+      color: #666;
+      margin-bottom: 40px;
+    }
+    .testimonials {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .card p {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .card img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 10px;
+    }
+    .profile {
+      display: flex;
+      align-items: center;
+      margin-top: 15px;
+    }
+    .profile span {
+      display: block;
+    }
+    .story-section {
+      margin-top: 60px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 30px;
+    }
+    .story-section video {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 12px;
+    }
+    .story-text {
+      flex: 1;
+      min-width: 280px;
+    }
+    .story-text h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: #0d47a1;
+    }
+    .story-text p {
+      color: #555;
+    }
+    .read-button {
+      margin-top: 20px;
+      display: inline-block;
+      padding: 10px 20px;
+      border: 2px solid #1e88e5;
+      color: #1e88e5;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .read-button:hover {
+      background: #1e88e5;
+      color: white;
+    }
+    .icons {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    place-items: center;
+    background: linear-gradient(315deg, #ffffff, #d7e1ec);    
+}
+.icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 5px;
+    transition: 0.3s;
+    color: white;
+    
+}
+.icons a:hover {
+    transform: scale(0.8);
+    opacity: 0.8;
+}
+/* Instagram Icon */ 
+.instagram {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    border: 2px solid rgb(61, 38, 114);
+    border-radius: 100%;    
+}
+
+/* Twitter Icon */ 
+.twitter {
+    background: #1DA1F2;
+    border: 2px solid rgb(61, 38, 114);
+    border-radius: 500%;
+}
+
+/* TikTok Icon*/ 
+.tiktok {
+    background: #000;
+    border: 2px solid rgb(61, 38, 114);
+    border-radius: 500%;
+}
+.facebook {
+    background: rgb(76, 158, 235);
+    border: 2px solid rgb(61, 38, 114);
+    border-radius: 500%;
+}
+.youtube {
+    background: rgb(250, 9, 9);
+    border: 2px solid rgb(61, 38, 114);
+    border-radius: 500%;       
+}
+.madia {
+    display: inline-flex;
+    list-style: none;   
+    
+}
+.madia .icon {
+    position: relative;    
+    border-radius: 500%;
+    border: none;    
+    padding: 15px;
+    margin: 10px;
+    width: 5px;
+    height: 5px;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.madia .name {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.madia .name::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background:#ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    
+}
+.madia .icon:hover .name {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+.madia .icon:hover span,
+.madia .icon:hover .name {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+.madia .instagram:hover,
+.madia .instagram:hover .name,
+.madia .instagram:hover .name::before {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    color:#ffffff;
+    
+}
+.madia .twitter:hover,
+.madia .twitter:hover .name,
+.madia .twitter:hover .name::before {
+    background: #1DA1F2;
+    color: #ffffff;
+}
+
+.madia .facebook:hover,
+.madia .facebook:hover .name,
+.madia .facebook:hover .name::before {
+    background: rgb(76, 158, 235);
+    color: #ffffff;
+}
+.madia .youtube:hover,
+.madia .youtube:hover .name,
+.madia .youtube:hover .name::before {
+    background: rgb(250, 9, 9);
+    color: #ffffff;
+}
+.madia .tiktok:hover,
+.madia .tiktok:hover .name,
+.madia .tiktok:hover .name::before {
+    background: #000;
+    color: #ffffff;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="title">
+      <h2>Hear from our learners</h2>
+    </div>
+    <div class="subtitle">
+      <p>Learners in our programmes don’t just learn new skills, they enjoy the experience too.</p>
+    </div>
+
+    <div class="testimonials">
+      <div class="card">
+        <p>“My name is Jessica Kamuala, I’m taking Data Science. Before this, I was never in the tech field, <span style="color:#0288d1">I was always into business, entrepreneurship, and agriculture</span>. Then one day, I woke up and the world had turned tech...”</p>
+        <div class="profile">
+          <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Jessica">
+          <span><strong>Jessica Kamuala</strong><br>Data Scientist, Rwanda</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <p>“My name is Bizimana Hortance, studying Salesforce. From high school and entering ALX Rwanda, I can say <span style="color:#7b1fa2">the program is very rewarding</span>...”</p>
+        <div class="profile">
+          <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="Bizimana">
+          <span><strong>Bizimana Hortance</strong><br>Salesforce, Rwanda</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <p>“My name is Thian Kamanda, pursuing Cloud Computing. <span style="color:#0288d1">Never considered techy even at home</span>...”</p>
+        <div class="profile">
+          <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Thian">
+          <span><strong>Thian Kamanda</strong><br>Cloud Computing, Rwanda</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <p>“My name is Mutara Arnould, taking Data Analytics. I would say ALX is the only place where you have those <span style="color:#3949ab">‘call me when you have something big’</span> people...”</p>
+        <div class="profile">
+          <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Arnold">
+          <span><strong>Arnold Mutara</strong><br>Data Analytics, Rwanda</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="story-section">
+      <video controls poster="https://images.unsplash.com/photo-1610147189219-d3c4f508d1b4?auto=format&fit=crop&w=600&q=80">
+        <source src="pics/video1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="story-text">
+        <h3>Be Inspired By Our Learners Journey And Stories</h3>
+        <p>Embark on a transformative journey toward tech excellence with ALX Foundations, the core of all ALX programmes. Over 8 weeks, you'll gain essential skills crucial for thriving in the professional tech world.</p>
+        <a class="read-button" href="#">Read Their Stories</a>
+      </div>
+    </div>
+  </div>
+  <ul class="madia">                                                  
+    <a href="https://instagram.com" target="_blank" class="instagram">
+        <li class="icon instagram">
+            <span class="name">instagram</span>
+            <span><i class="fab fa-instagram icon"></i></span>
+        </li>
+    </a>
+  </ul>  
+  
+</body>
+</html>
+
+
